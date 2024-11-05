@@ -1,0 +1,98 @@
+#gdpr-cookie-message {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    max-width: 375px;
+    background-color: #121258;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.25);   
+    font-family: system-ui;
+    z-index: 9999999;
+}
+#gdpr-cookie-message h4 {
+    color: #fff;   
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+#gdpr-cookie-message h5 {
+    color: #ff1457;  
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#gdpr-cookie-message p, #gdpr-cookie-message ul {
+    color: white;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+#gdpr-cookie-message p:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    grid-gap: 20px;
+    margin-top: 15px;
+}
+#gdpr-cookie-message li {
+    width: 49%;
+    display: inline-block;
+}
+#gdpr-cookie-message a {
+    color: #ff1457;
+    text-decoration: none;
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted rgba(255,255,255,0.75);
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message a:hover {
+    color: white;
+    border-bottom-color: #ff1457;
+    transition: all 0.3s ease-in;
+}
+#gdpr-cookie-message button,
+button#ihavecookiesBtn {
+    border: none;
+    background: -webkit-linear-gradient(left, #ffbd84 0%,#ff1f8e 100%);
+    background: linear-gradient(to right, #ffbd84 0%,#ff1f8e 100%);
+    color: white;
+    font-size: 15px;
+    padding: 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    width: 100%;
+}
+#gdpr-cookie-message button:hover {
+    background: white;
+    color: #ff1457;
+    transition: all 0.3s ease-in;
+}
+button#gdpr-cookie-advanced {
+    background: white;
+    color: #050748;
+}
+#gdpr-cookie-message button:disabled {
+    opacity: 0.3;
+}
+#gdpr-cookie-message input[type="checkbox"] {
+    float: none;
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width:767px) {
+
+    #gdpr-cookie-message {
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        max-width: 100%;       
+        width: 100%;
+    }
+
+}

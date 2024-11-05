@@ -1,0 +1,282 @@
+/**dark mode css**/
+.menu-dark .sub-menu-column .menuheading {  color: #e6e6e6;}
+.menu-dark .sub-menu-column ul li a { color: #a2a2a2;}
+.menu-dark .sub-menu-section {background: #202020;  border-top: 2px solid #2f2f2f;}
+body.active-dark {    color: #a2a2a2; background: #101010;}
+.active-dark .-service-list li a { color: #a2a2a2;}
+.active-dark h1,.active-dark h2,.active-dark h3,.active-dark h4,.active-dark h5,.active-dark h6 {color: #e6e6e6;}
+.active-dark .web-deg {background: #101010;}
+.active-dark .navbar-light .navbar-nav .nav-link {color: #e6e6e6;}
+.active-dark .hero-bg-bg1:before { opacity: 0.4;}
+.active-dark .top-header .navbar .custom-btn {color: #fff; }
+.active-dark header .dropdown-menu {background-color: #202020;}
+.active-dark .dropdown-item {color: #a2a2a2;}
+.active-dark .dropdown-item:focus, .active-dark .dropdown-item:hover {background-color: #202020;}
+.active-dark .top-header .sticky {background: #151515;}
+.active-dark .about-agency{background: #151515;}
+.active-dark .about-agency:before { opacity: .4;}
+.active-dark .quote { background: #101010; color: #a2a2a2;  }
+.active-dark .service-section { background: #101010;}
+.active-dark .service-section:before { background: url(../images/shape/dot-shape.png) #101010;}
+.active-dark .service-section .s-block {background: url(../images/shape/shape-7.svg) #1d1d1d;   background-size: 0px;    border: 1px solid #151515;}
+.active-dark .shape-bg2:after {opacity: .4;}
+.active-dark .shape-bg2:before {opacity: .4;}
+.active-dark .statistics-img {  background: rgba(255, 255, 255, 0.3);}
+.active-dark .statistics .statnumb  span {color: #e6e6e6;}
+.active-dark .portfolio-section:before { opacity: .2;}
+.active-dark .isotope_item h4 a {color: #e6e6e6;}
+.active-dark .portfolio-section {background: #151515;}
+.active-dark .breadcrumb-area .bread-menu li a {    color: #a2a2a2;}
+.active-dark .clients-section { background: #101010;}
+.active-dark .clients-logo {
+background:rgba(255, 255, 255, 0.3);
+border: 1px solid #29294c;
+-webkit-box-shadow: -20px 20px 40px #ece0f2, 20px -20px 40px #fff8ff;
+box-shadow: -20px 20px 40px #101010, 20px -20px 40px #101010;}
+.active-dark .work-category {  background: #151515;}
+.active-dark .testinomial-section {background: url(../images/shape/shape-9.svg) #101010;  background-size: 0px;}
+.active-dark .testinomial-section .owl-carousel .owl-dots {background: transparent;}
+.active-dark .enquire-form {    background: #151515;}
+.active-dark .form-block label a {color: #00BCD4;}
+.active-dark .our-office {background: #101010; }
+.active-dark .skyline-img {    background: #191919;}
+.active-dark .btn-outline {border: 2px solid #ffffff;    color: #e6e6e6;    background: transparent;}
+.active-dark .shape-bg1:after {opacity: .4;}
+.active-dark .shape-bg1:before {opacity: .4;}
+.active-dark .shape-numm .shape-loc:last-child:after{opacity: .4;}
+.active-dark .shape-numm .shape-loc:first-child:before{opacity: .4;}
+.active-dark .shape-num .shape-loc:last-child:after{opacity: .4;}
+.active-dark .shape-num .shape-loc:first-child:before{opacity: .4;}
+.active-dark .footer-row1 { background: #151515;}
+.active-dark .email-subs-form input {
+color: #e6e6e6;    background: #101010;    border: 1px solid #1f1f1f;
+-webkit-box-shadow: -6px 6px 11px #f2f2f2, 6px -6px 11px #fff0e8;
+box-shadow: -6px 6px 11px #151515, 6px -6px 11px #151515;}
+.active-dark .footer-svg svg path { fill: #151515;}
+.active-dark .footer-row2 { background: #101010;}
+.active-dark .footer-row3 {background: #101010;}
+.active-dark .hline {border-top: 1px solid #181818;}
+.active-dark footer:after { opacity: 0.04;}
+.active-dark footer:before { opacity: 0.04;}
+.active-dark .form-block input, .active-dark .form-block textarea {    color: #e6e6e6;    background: #101010;    border: 2px solid #1f1f1f;}
+.active-dark .fl-hero {
+background: url(../images/shape/hero-shape.svg),#101010;
+background-position: center center, center center;
+background-size: cover, cover;
+background-repeat: no-repeat, no-repeat;}
+.active-dark .about-freelance{background: #151515;}
+.active-dark .counter-no span {color: #a2a2a2;}
+.active-dark .hexa4 {background: #00243a; border: 2px solid #003c61;}
+.active-dark .hexa3 {background: #101844; border: 2px solid #182884;}
+.active-dark .hexa2 {background: #174267; border: 2px solid #2369a5;}
+.active-dark .hexa1 {background: #311a58; border: 2px solid #54289e;}
+.active-dark .bhv-service {background: #151515;}
+.active-dark .bhv-service {background: #151515;}
+.active-dark .bhv-service .s-block {background: url(../images/shape/shape-7.svg) #191919;  background-size: 0px;  border: 1px solid #191919;}
+.active-dark .lead-hero {background: #101010;}
+.active-dark .about-lead-gen{background: #101010;}
+.active-dark .why-choos-lg:before { opacity: .4;}
+.active-dark .statistics-section{background: #151515;}
+.active-dark .why-choos-lg { background: #151515;}
+.active-dark .active-dark .clients-section.lead-gen-client { background: #151515;}
+.active-dark .light-bgs { background: rgba(255, 255, 255, 0.02);}
+.active-dark .digi-mkt {background: #101010;}
+.active-dark .wide-block {border: 1px solid #191919;    background: #191919;}
+.active-dark ::-webkit-input-placeholder { color: #e6e6e6;}
+.active-dark :-ms-input-placeholder {   color: #e6e6e6;}
+.active-dark ::placeholder {  color: #e6e6e6;}
+.active-dark .navbar .mobilemenu i { color: #a2a2a2;}
+.active-dark .res-menu .modal-header {background: #151515;}
+.active-dark .res-menu .modal-dialog {background: #101010;}
+.active-dark .res-menu .modal-body { background: #101010;}
+.active-dark .res-menu .menu .nav-link { color: #e6e6e6;}
+.active-dark .res-menu .dropdown-toggle::after {border-top: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6;}
+.active-dark .res-menu .dropdown-item { background-color: #101010;}
+.active-dark .res-menu .dropdown-menu { background-color: #101010;}
+.active-dark .res-menu .modal-content.full {background: #101010;}
+.active-dark .hero-card-web {background: #101010;}
+.active-dark .about-sec-rpb { background: #151515;}
+.active-dark .service-sec-list { background: #191919;    border: 1px solid #191919;}
+.active-dark .-cta-btn p { color: #e6e6e6;}
+.active-dark .clients-section- { background: #101010;}
+.active-dark .badges-section { background: #181818;}
+.active-dark .cta-area { background: #181818;}
+.active-dark .footer-brands { background: #151515;}
+.active-dark .shape { opacity: .4;}
+.active-dark .single-blog- .content .title a {  color: #e6e6e6;}
+.active-dark .single-blog- .content .title a:hover {  color: #ff1f8e ;}
+.active-dark::-webkit-scrollbar-track {    background: #101010;}
+.active-dark .main-header.sticky { background: #101010;}
+.active-dark .main-header.sticky .custom-nav .nav-list li a.menu-links {  color: #e6e6e6;}
+.active-dark .custom-nav .nav-list li a.menu-links {  color: #e6e6e6;}
+.active-dark .contact-info- { box-shadow: 0 0 5px rgba(0,0,0,.3);}
+.active-dark .hrbg {  background: #151515;}
+.active-dark .contact-info- .inquiry-card-nn {   border-top: 1px solid #1c2b42;}
+.active-dark .contact-info- .contct-heading { color: #e6e6e6;}
+.active-dark .contact-info- .inquiry-card-nn ul li a { color: #e6e6e6; }
+.active-dark .contact-info-:after { border-bottom: 7px solid #202020;}
+.active-dark .contact-info- { background: #202020;}
+.active-dark .footer-address-list li {  color: #a2a2a2;}
+.active-dark .nav-bg-b.main-header .mega-white-logo { display: inline-block;}
+.active-dark .main-header.sticky .mega-darks-logo {  display: none;}
+.active-dark .main-header.sticky .hc-nav-trigger span,
+.active-dark .main-header.sticky .hc-nav-trigger span::before,
+.active-dark .main-header.sticky .hc-nav-trigger span::after {  background: #fff;}
+.active-dark .hc-nav-trigger span, .active-dark .hc-nav-trigger span::before, .active-dark .hc-nav-trigger span::after { background: #fff;}
+.active-dark .nav-item.dropdown:hover a.nav-link{ color: #101010;}
+.active-dark .footer-address-list li a {  color: #a2a2a2;}
+.active-dark .footer-social-media-icons a {  color: #e6e6e6;}
+.active-dark .breadcrumb-area:before {  opacity: .92;  background: #101010;}
+.active-dark .deep-dark{background: #101010 !important;}
+.active-dark .light-dark{background: #151515 !important;}
+.active-dark .dim-dark{background: #181818;}
+.active-dark .link-hover a {  color: #a2a2a2;}
+.active-dark .breadcrumb-areav2:before { opacity: .92; background: #101010;}
+.active-dark .blog-post-tag span {color: rgb(106 106 142);}
+.active-dark .blog-share-icon span { color: rgb(106 106 142);}
+.active-dark .blog-post-tag a { color: #6a6a8e; border-color: rgb(64 64 97);}
+.active-dark .rd-quote { border-left: 4px solid #fc4899;  background: #151515;}
+.active-dark .form-blog { background: #151515;}
+.active-dark .author-block { background: #151515;}
+.active-dark .post-navigation h4 a { color: #a2a2a2;}
+.active-dark .tabs a { background: #252533;}
+.active-dark .recent-post .post-info h5 a { color: #a2a2a2;}
+.active-dark .icon-card- { background: #101010;  border: 1px solid #29294c;}
+.active-dark .card-stats .statistics {  background: #101010; -webkit-box-shadow: none; box-shadow: none; border: 1px solid #29294c;}
+.active-dark .case-study{background: #151515}
+.active-dark .project-platform-used {  margin: 0 10px 0 0px; }
+.active-dark .-shadow {  -webkit-box-shadow: none; box-shadow: none;}
+.active-dark .info-text-block h4 a {  color: #a2a2a2;}
+.active-dark .team {background: #151515}
+.active-dark .about-sec{background: #151515}
+/*.active-dark .accordion .card-body { background: #101010;}*/
+.active-dark .card-1 {    border: 1px solid #151515;}
+.active-dark .card-1 .card-header { background-color: #151515;}
+.active-dark .tabs-layout .nav-tabs .nav-link.active {    color: #ffffff;    background-color: #00baff;    border-color: #00baff; }
+.active-dark .tabs-layout .nav-tabs .nav-link {   border: 1px solid #151515;  color: #6a6a8e;  background-color: #181818; }
+.active-dark .layer-div:before { opacity: .1;}
+.active-dark section.error{    background: #101010;}
+.active-dark .contact-page{    background: #151515;}
+.active-dark .contact-location{    background: #101010;}
+.active-dark .form-block select { color: #e6e6e6;   background: #101010;   border-bottom: 2px solid #1f1f1f; }
+.active-dark .skype-card {    background: #202040;}
+.active-dark .email-card {  background: #251738;}
+.active-dark .contact-card { background: #202040;}
+.active-dark .portfolio-meta ul li i { color: #a2a2a2;}
+.active-dark .portfolio-meta ul li p { background: #151515;  color: #a2a2a2;}
+.active-dark .portfolio-meta ul li { background: #151515; border-bottom: 1px solid #101010;}
+.active-dark .filters .filter-menu li.is-checked {  background: #f95b94;  color: #fff;}
+.active-dark .filters .filter-menu li { color: #a2a2a2;  background: #2d304c;}
+.active-dark .portfolio-item-info h3 a {    color: #a2a2a2;}
+.active-dark .portfolio-block { background: #151515;}
+.active-dark .why-choose {background: #101010;}
+.active-dark .ps-block span {  border: 1px solid #2b2b7d;   background: #24213c;}
+.active-dark .service { background: #101010;}
+.active-dark .reviews-card { background: #181818; border: 1px solid #252525;}
+.active-dark .reviews-block { background: #151515;}
+.active-dark .featured-project { background: #101010;}
+.active-dark .block-a1{background: #151515;}
+.active-dark .pricing-table.best-plan img {   background: #2d1963;     border: 8px solid #382371;}
+.active-dark .pricing-table img {  background: #231744;     border: 8px solid #2d1963;}
+.active-dark .pricing-table .inner-table .details {   border-top: 1px solid #20203e;}
+.active-dark .best-plan { background: #161633 !important;}
+.active-dark .pricing-table { box-shadow: none;  background: #101010; border: 1px solid #202020;}
+.active-dark .bg-shape:before {  opacity: .3;}
+.active-dark .bg-shape:after { opacity: .3;}
+.active-dark .s-block {  background: #191919;   border: 1px solid #191919;}
+.active-dark .service-block{background: #101010;}
+.active-dark .tech-icons a { border: 4px solid #101010; background: #101010;}
+.active-dark .techonology-used- {   background: #151515;}
+.active-dark .image-block img { box-shadow: none; }
+.active-dark .image-block1 img {box-shadow: none}
+.active-dark .statistics-wrap { background: #151515;}
+.active-dark .copyright{ color: #a2a2a2;}
+.active-dark .copyright a{ color: #a2a2a2;}
+.active-dark .entry-blog a {  color: #a2a2a2;}
+.active-dark .modal-content { background-color: #101010;}
+.active-dark .fdgn2 input,.active-dark .fdgn2 select,.active-dark .fdgn2 textarea {  border: 2px solid #404040!important;}
+.active-dark .modal-header { border-bottom: 1px solid #404040;}
+.active-dark .popup-modal1 .modal-dialog { background: #101010;}
+/**2.0**/
+.active-dark .sub-menu-section {background: #202020;}
+/*.active-dark .hero-section {background-color: #202020;}*/
+.active-dark .sub-menu-column .menuheading { color: #e6e6e6; border-bottom: 1px solid #313131;}
+.active-dark .service-card-app  {background: #151515; box-shadow: none;}
+.active-dark .service-section-app  {background-size: 0;}
+.active-dark .sctxt {-webkit-text-stroke: 1px #2b2b2b; -webkit-text-fill-color: #101010;}
+.active-dark .item-info-div {background: #181818;}
+.active-dark .item-image {background: #141414;}
+.active-dark .clients-section-app { background: #202020;}
+.active-dark .apppg .brand-logo {background: #181818;}
+.active-dark .work-category .industry-workfor {background: #181818;}
+.active-dark .testinomial-section-app .tcd {background: #181818; box-shadow: none;}
+.active-dark .app-cta { background: #151515;}
+.active-dark .landscp, .active-dark .info-text-div {background: #151515; box-shadow: none;}
+.active-dark .-address-list li a { color: #a2a2a2; }
+.active-dark .single-blog-info- h4 a { color: #a2a2a2; }
+.active-dark .s-block a { color: #a2a2a2; }
+.active-dark .bg-flat1{background: #191919;}
+.active-dark .single-blog-post- {background: #171717; box-shadow: none;}
+.active-dark .single-blog-post- .blog-content-tt {border: 1px solid #232323;}
+.active-dark .business-startup {background-image: url(../images/hero/wave-hero-dark.svg);  background-color: #101010;}
+.active-dark .bg-flat6 { background: #171717;}
+.active-dark .bg-flat5 { background: #171717;}
+.active-dark .bg-light-ylo {background: #151515;}
+.active-dark .up-curvs svg  {fill: #151515;}
+.active-dark .bottom-curvs svg  {fill: #151515;}
+/***/
+.active-dark .dark-bg1 {background: #101010;}
+.active-dark .dark-bg2 {background: #131313;}
+.active-dark .dark-bg3 {background: #151515;}
+.active-dark .dark-bg4 {background: #181818;}
+.active-dark .dark-bg5 {background: #191919;}
+/***/
+.active-dark .main-header .mega-white-logo { display: block;}
+.active-dark .main-header .mega-darks-logo { display: none;}
+.active-dark .login-form-div {background: #0f0f0f;}
+.active-dark .contact2dv {background: #101010;}
+.active-dark .info-wrapr .dbox { color: #a2a2a2;}
+.active-dark .info-wrapr .dbox a{ color: #a2a2a2;}
+.active-dark .card-header { background-color: rgb(25 25 25); border-bottom: 1px solid rgba(0,0,0,.125); }
+.active-dark .card-2 .card-header button, .active-dark .accordion .acc-icon:after, .active-dark .rpb-item-infodv ul li strong, .active-dark .rpb-itm-pric span.offer-prz, .active-dark .rpb-cart-table table.cart_table th, .active-dark .rpb-cart-table table .product-name a, .active-dark .post-info h5 a, .active-dark .info-wrapr .dbox p span, .active-dark .sub-menu-column ul li a, .darkbg .navbar-light .navbar-nav .nav-lin,.active-dark .pagination a {color: #e6e6e6;}
+.active-dark .main-shop-catte a, .active-dark .shop-tags-list li a{  background-color: #101010;   border: 1px solid #242424; color: #e6e6e6;}
+.active-dark .shop-products-bhv { background: #151515;}
+.active-dark .rpb-shop-prevw, .active-dark .rpb-item-infodv, .active-dark .tab-17 .nav-tabs, .active-dark .div-for-data, .active-dark  {  background-color: #181818; border: 1px solid #242424;}
+.active-dark .shop-products-prvw .tabs-layout .nav-tabs .nav-link { border: 1px solid #181818; color: #6a6a8e;  background-color: #181818;}
+.active-dark .shop-products-prvw .tabs-layout .nav-tabs .nav-link.active { color: #fff; background-color: #00baff; border-color: #00baff;}
+.active-dark .rpb-cart-table table.cart_table td, .active-dark .table td,  .active-dark  .table th { border-top: 1px solid #242424; color: #e6e6e6;}
+.active-dark .border { border: 1px solid #242424!important;}
+.active-dark .card-1 { border: 1px solid #151515; background: #181818;}
+.active-dark .post-social {border-top: 1px solid #232323;}
+.active-dark .blog-categories ul li a {border-bottom: 1px solid #232323;}
+.active-dark .footerdez .up-curvs svg {  fill: #191919;}
+.active-dark .rpb-shop-inf-rr a.rpb-shop-prev, .active-dark .cart-pg-coupon input { background-color: #202020; border: 1px solid #202020;}
+/**Start-Bootstrap-v5.1.3-update + 2.1**/ 
+.active-dark .niwax-btn1 > span, .active-dark .pricingheader {background-color: #101010; color: #ffffff;}
+.active-dark .reco .pricingheader {  background-color: #151515;}
+.active-dark .niwaxpricingbox, .active-dark .awardlogo, .active-dark .timeline-row .timeline-content:before { background: #181818;}
+.active-dark .pricingrate { border-top: 1px solid #2c2c2c;}
+.active-dark .pricingoffers {background-color: #181818;  border: 1px solid #2c2c2c;}
+.active-dark .pricingfooter { background: #2c2c2c;}
+.active-dark .livechatbtn, .active-dark .awardbgwithtext *, .active-dark  .btnwithiconside div, .active-dark .info-text-block a {color: #e6e6e6; }
+.active-dark .niwax-lp2, .active-dark .offcanvas {  background-color: #101010;}
+.active-dark .niwax-company-awards-cover, .active-dark .companyinfodiv { background: #181818; }
+.active-dark .btn-close{background-color: #686868;}
+.active-dark .contact-data ul li a, .active-dark .social-media-linkz a, .active-dark .companytime p, .active-dark .timeline-row .timeline-time {color: #e6e6e6;}
+.active-dark .niwax-lp1 { background-size: 0px;}
+.active-dark .niwax-lp1:before { background: #151515;}
+.active-dark .formcover {background: #202020;}
+.active-dark .timeline-row .timeline-content, .active-dark .timeline-row .timeline-content:after {background: #151515;  border: 1px solid #151515;}
+
+/*update2.3*/
+.active-dark .funfct, .active-dark .pbwide, .active-dark .testinomial-section-nx,.active-dark .contact--block, .active-dark .niwax23form, .active-dark .contact-review {background: #191919; box-shadow: none;}
+.active-dark .funfct img {background: #fff; padding: 5px; border-radius: 14px;}
+.active-dark .funfct .services-cuntr, .active-dark .getintouchinfo a{color: #e6e6e6;}
+.active-dark .funfct p, .active-dark .info-list-ul li, .active-dark .work-card p, .active-dark .ouroffice a{color: #a2a2a2;}
+.active-dark .widebloktag span, .active-dark .footerdex, .active-dark .contact-block-btm, .active-dark.glassmorphism .work-categorys{background: #111; background-color: #111; background-size: 0;}
+.active-dark .row-forfullcard, .active-dark .digitalagency20{background-size:0 ;}
+.active-dark.glassmorphism .work-card {background: rgb(255 255 255 / 20%);}
+.active-dark .textareax .floating-input:focus~label, .active-dark .textareax .floating-input:not(:placeholder-shown)~label, .active-dark .textareax .floating-select:focus~label, .active-dark .textareax .floating-select:not([value=""]):valid~label, .active-dark #contactform .error-label .error {background: #191919;}
+.active-dark .sidebarform {background: transparent;}
+.active-dark .form-block select{border-color:#1f1f1f ;}
+.active-dark .btn-close {border-radius: 100px;}
