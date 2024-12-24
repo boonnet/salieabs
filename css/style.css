@@ -3372,6 +3372,7 @@ a.smllbtnn {    line-height: 45px;    color: #fff;    border-radius: 8px;    pad
     width: 60px;  }  
 .switch-wrapper  .switch input {display: none; }  
 .switch-wrapper  .slider {
+    display: none;
     background-color: white;
     bottom: 0;
     cursor: pointer;
