@@ -442,5 +442,3 @@ File Description: Main JS file of the template*/
   
   //end of page
   })(jQuery);
-  
-  
