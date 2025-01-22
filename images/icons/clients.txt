@@ -1,0 +1,68 @@
+<div class="row">
+					<div class="col-lg-12">
+						<div class="client-logoset">
+							<ul class="row text-center clearfix apppg">
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".2s">
+									<div class="brand-logo hoshd"><img src="images/client/imtex.png" alt="clients" class="img-fluid"></div>
+									<p>Rimtex</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".4s">
+									<div class="brand-logo hoshd"><img src="images/client/kauvery.png" alt="clients" class="img-fluid"></div>
+									<p>Kauvery Hospital</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".6s">
+									<div class="brand-logo hoshd"><img src="images/client/tanish.png" alt="clients" class="img-fluid"></div>
+									<p>Tanishq</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay=".8s">
+									<div class="brand-logo hoshd"><img src="images/client/salem_corp.png" alt="clients" class="img-fluid"></div>
+									<p>Salem Crop</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1s">
+									<div class="brand-logo hoshd"><img src="images/client/water.png" alt="clients" class="img-fluid"></div>
+									<p>Drainage and Water supply</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.2s">
+									<div class="brand-logo hoshd"><img src="images/client/isha_homes.png" alt="clients" class="img-fluid"></div>
+									<p>Isha Homes</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.4s">
+									<div class="brand-logo hoshd"><img src="images/client/titan.png" alt="clients" class="img-fluid"></div>
+									<p>Titan</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.6s">
+									<div class="brand-logo hoshd"><img src="images/client/smart_city.png" alt="clients" class="img-fluid"></div>
+									<p>Smart City</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="1.8s">
+									<div class="brand-logo hoshd"><img src="images/client/ramco.png" alt="clients" class="img-fluid"></div>
+									<p>Ramco</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2s">
+									<div class="brand-logo hoshd"><img src="images/client/halbit.png" alt="clients" class="img-fluid"></div>
+									<p>Halbit</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2.2s">
+									<div class="brand-logo hoshd"><img src="images/client/minicipality.png" alt="clients" class="img-fluid"></div>
+									<p>Municipality</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2.4s">
+									<div class="brand-logo hoshd"><img src="images/client/knowledge_lens.png" alt="clients" class="img-fluid"></div>
+									<p>Knowledge Lens</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2s">
+									<div class="brand-logo hoshd"><img src="images/client/wabco.png" alt="clients" class="img-fluid"></div>
+									<p>Wabco</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2.2s">
+									<div class="brand-logo hoshd"><img src="images/client/minicipality.png" alt="clients" class="img-fluid"></div>
+									<p>Trichy Corporation</p>
+								</li>
+								<li class="col-lg-2 col-md-3 col-sm-4 col-6 mt30 wow fadeIn" data-wow-delay="2.4s">
+									<div class="brand-logo hoshd"><img src="images/client/paragon.png" alt="clients" class="img-fluid"></div>
+									<p>Paragon</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>

@@ -154,7 +154,7 @@ margin: 0 20px 0 0;}
 .nav-bg-b.main-header .mega-darks-logo{display: none;}
 .main-header.sticky .mega-darks-logo{display: inline-block;}
 .dsk-logo{float: left; line-height: 85px;}
-.dsk-logo .nav-brand img{max-height: 75px;}
+.dsk-logo .nav-brand img{max-height: 55px;}
 .custom-nav{float: right;}
 .custom-nav .menu-dorpdown{width:240px; margin: 0 auto;}
 .custom-nav .smfull{width:100%;}
@@ -227,7 +227,7 @@ white-space: normal;}
 .sub-menu-column {
 width: 25%;
 float: left;
-padding: 0 20px;}
+padding: 0 10px;}
 .sub-menu-column .menuheading {
 color: #050748;
 font-weight: 700;
@@ -251,6 +251,7 @@ color: #050748;
 position: relative;
 line-height: 25px;
 font-weight: 600;}
+.product-sub-menu{font-size: 24px; color: #050748; font-weight: 600 important;}
 .sub-menu-section {
 box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 0.04);
 border-top: 2px solid #f3f3f3;
@@ -690,7 +691,7 @@ box-shadow:  -30px 30px 60px #f2f2f2,30px -30px 60px #ffffff;}
 content: "";
 background: url(../images/shape/dot-pattern.png);
 position: absolute;
-height: 400px;
+/* height: 400px; */
 right: 0;
 left: 0;
 top: 0;
@@ -708,7 +709,7 @@ overflow: hidden;
 background: #f3f9ff;
 -webkit-box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059), 0 8.2px 8.9px -30px rgba(0, 0, 0, 0.071), 0 25px 40px -30px rgba(0, 0, 0, 0.2);
 box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059), 0 8.2px 8.9px -30px rgba(0, 0, 0, 0.071), 0 25px 40px -30px rgba(0, 0, 0, 0.2);}
-.item-image img {  width: 100%;}
+.item-image img {  width: 376px; height: 376px;}
 .portfolio-block{   position: relative;    padding:50px;    border-radius: 8px;    display: flex;    align-items: center;    justify-content: space-between;}
 .portfolio-item-info h3 a{color: #050748;}
 .portfolio-item-info{    width: 50%; padding-right: 40px}
@@ -716,6 +717,37 @@ box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059), 0 8.2px 8.9px -30px rgba(0
 .portfolio-item-info .-reviewr {   width: 50px;   height: 50px;   border-radius: 100px;   overflow: hidden;   margin-right: 15px;}
 .portfolio-item-info .review-text {   padding: 0px 0 20px 0;}
 .portfolio-item-info .reviews-card {       background: rgba(255, 255, 255, 0.6);    padding: 25px;    border-radius: 8px;}
+.portfolio-section {
+    padding: 80px 0;
+}
+.nav-pills .nav-link {
+    color: #333;
+    border-radius: 20px;
+    padding: 8px 24px;
+    margin: 0 5px;
+}
+.nav-pills .nav-link.active {
+    background-color: #582C4F;
+    color: white;
+}
+.nav-pills .nav-link.text-danger {
+    color: #dc3545 !important;
+}
+.hide {
+    display: none !important;
+}
+.common-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.common-heading span {
+    color: #dc3545;
+    font-size: 1.2em;
+}
+.common-heading h2 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
 /**Clients section**/
 .clients-logo{
 background: #ffffff;
@@ -1621,6 +1653,64 @@ border-radius: 5px;}
 .blog-share-icon a:last-child {   margin-right: 0px;}
 .post-navigation span a {color: #6a6a8e;   margin-bottom: 5px;  display: block;}
 .post-navigation h4 a{ color: #050748;}
+.quote-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px 75px;
+  }
+  
+  .quote-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .quote-symbol {
+    font-size: 4rem;
+    line-height: 1;
+    color: #722F97; /* Purple color from the image */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    display: block;
+    margin-top: -1rem;
+  }
+  
+  .quote-content {
+    flex-grow: 1;
+  }
+  
+  .quote-content p {
+    width:90%;
+    margin: 0;
+    font-size: 1.50rem;
+    line-height: 1.5;
+    color: #333;
+    font-family: Arial, sans-serif;
+  }
+  .blogpostsearch{border:none; border-radius: 50px; background-color: #581845;   padding: 0 20px;  /* Add horizontal padding */
+    color: white;     /* Text color while typing */
+    font-size: 16px; }
+.blogpostsearch::placeholder {
+    text-align: center;
+    color: white;
+  }
+  .blogpostsearch::-webkit-input-placeholder { /* Chrome/Safari/Opera */
+    text-align: center;
+    color: white;
+  }
+  .blogpostsearch::-moz-placeholder { /* Firefox */
+    text-align: center;
+    color: white;
+  }
+  .blogpostsearch:-ms-input-placeholder { /* IE/Edge */
+    text-align: center;
+    color: white;
+  }
+  .single-blog-info- .readmore{
+    font-weight: 500;
+    font-size: 12px;
+    color: #58468c !important;
+    letter-spacing: 1.5px;}
 /**contact page**/
 .banner-6{background: url(../images/banner/4.jpg);   background-repeat: no-repeat;    background-size: cover; background-position: center center;}
 .contact-location{overflow:hidden;}
@@ -2077,6 +2167,9 @@ border-radius: 8px;
 background: #fff;}
 .single-blog-img- img{    border-radius: 8px 8px 0px 0px;}
 .single-blog-img-{position: relative;}
+.blog-card-image{
+    width: 450px; height: 196.35px; object-fit: fit-content;
+}
 .entry-blog-post{
 border-radius: 100px;
 padding: 10px 15px;
@@ -2318,6 +2411,10 @@ right: 0; left: 0; text-align: center; top: 0; font-weight: 900; text-transform:
 
 @media (min-width: 1200px){
 .shop-container{max-width: 1110px !important}
+}
+
+.shop-container{
+    margin-top: 5%;
 }
 
 .shop-tags-list li {
