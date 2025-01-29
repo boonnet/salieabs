@@ -2358,8 +2358,25 @@ display: inline-block;
 }
 .link-prbs {display: block; color: #6a6a8e;  font-size: 16px; font-family: 'Poppins', sans-serif; }
 .tec-icon ul li .img-iconbb { display: inline-flex; border-radius: 100%; background: #f5f7ff; width: 60px; height: 60px; align-items: center; }
-.tec-icon ul li img {width: 40px; margin: 0 auto; }
+.tec-icon ul li img {width: 190px; margin: 0 auto; }
 .tec-icon ul li { display: inline-block; margin: 0 10px 0 0; }
+.spec-label {
+    color: #800020;
+    font-weight: 500;
+}
+.spec-content {
+    margin-bottom: 0.5rem;
+}
+.freq-list {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;}
+.case-img{
+    width: 376px;
+    height: 381.89px;
+    justify-content: center;
+    align-items: center;
+}    
 .service-card-app{
 display: block;
 background: #fff;
@@ -4963,3 +4980,49 @@ a.smllbtnn {
     font-weight: 700;
     font-size: 20px;
   }
+  .industry-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.industry-card h6 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+.industry-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.enwiseget-started-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  .enwisecontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .enwisesection-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  .enwisesection-content {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+
