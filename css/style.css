@@ -416,7 +416,7 @@ margin: 0 auto 0;
 max-width: 100%;
 max-height: 100%;
 width: initial !important;}
-.title-serv-c{color: #fff; font-size: 22px; font-weight: 700; line-height: 1.2; padding: 20px 20px 35px;}
+.title-serv-c{color: #fff; font-size: 19px; font-weight: 700; line-height: 1.2; padding: 20px 20px 35px;}
 .title-serv-c span {   display: block;}
 .card-bg-a{
 background: #3faee5;
@@ -2338,7 +2338,7 @@ margin-top: 30px; position: relative; text-align: center; }
 .funfct img{width: 65px; margin: 0 auto 15px; display: block;}
 .funfct .services-cuntr{ display: inline-block; font-weight: 900; font-size: 30px; color: #050748; padding: 15px 0; }
 .about-sec-app{
-background: url(../images/shape/bg-light2.png);
+/* background: url(../images/shape/bg-light2.png); */
 background-size:contain;
 background-repeat: repeat-x;
 background-position: center center;}
@@ -3928,6 +3928,9 @@ html .mt15{margin-top: 15px;}
     background: #fff;
     border-radius: 8px;
     margin-left: 50px;
+}
+.home-banner-para{
+    color: black !important;
 }
 .footerdex { background-color: #01011b; }
 /***/
