@@ -44,6 +44,9 @@ transition: 1.2s cubic-bezier(.17, .85, .438, .99);
 -o-transition: all 0.4s;
 -webkit-transition: all 0.4s;
 transition: all 0.4s;*/}
+.office-img{
+    height: 278.8px !important;
+}
 .no-shadow{box-shadow:none !important}
 span.circle{background: rgba(255, 255, 255, 0.2); display: block; position: absolute; top: -10%; right: -130px; width: 200px; height: 200px; border-radius: 50%;}
 .lnk:hover span.circle{ top: -10%;    right: -80px;}
@@ -741,12 +744,18 @@ box-shadow: 0 3.4px 2.7px -30px rgba(0, 0, 0, 0.059), 0 8.2px 8.9px -30px rgba(0
     margin-bottom: 50px;
 }
 .common-heading span {
-    color: #dc3545;
+    color: #eb512d;
     font-size: 1.2em;
 }
 .common-heading h2 {
     font-size: 2.5em;
     margin-top: 10px;
+}
+.main-of-sub{
+    color: #eb512d !important;
+}
+.sub-of-main{
+    color: #561944 !important;
 }
 /**Clients section**/
 .clients-logo{
@@ -3932,6 +3941,9 @@ html .mt15{margin-top: 15px;}
 .home-banner-para{
     color: black !important;
 }
+.home-banner-para1{ color: black !important;
+     font-size: 17px !important;
+    }
 .footerdex { background-color: #01011b; }
 /***/
 #progress-bar {
