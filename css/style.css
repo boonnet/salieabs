@@ -111,9 +111,10 @@ font-family: 'Poppins', sans-serif;
 font-weight: 500;
 padding: 0px 15px;
 line-height: 48px;}
+.navbar-nav{justify-content: center; align-items: center;}
 .fixed-top { position: fixed; top: 0; right: 0; left: 0; z-index: 1030; padding-top: 0; padding-bottom: 0; height: 100px;  }
 .brand-logo a{display: block; }
-.top-header  .navbar .custom-btn{   padding: 0px 32px;    color:#fff;   font-weight: 400;}
+.top-header  .navbar .custom-btn{   padding: 0px 32px;    color:#fff;   font-weight: 400;     height: 50px;      width: 180px;}
 .top-header  .navbar .custom-btn:hover, .top-header  .navbar .custom-btn:focus{ color:#fff;}
 .modal-backdrop {background: linear-gradient(135deg, #0c0004 0%,#000e0c 100%);}
 .modal {z-index: 999999;}
@@ -259,7 +260,7 @@ font-weight: 600;}
 box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 0.04);
 border-top: 2px solid #f3f3f3;
 width: 100%;
-padding:40px 0;
+padding:20px 0;
 display: inline-block;
 background-color: #ffffff;
 margin-top: 4px;}
@@ -4853,6 +4854,9 @@ div.custom-nav > ul > li:hover .nx-dropdown {
 img {
     max-width: 100%;
     height: auto;
+}
+#main-logo{
+    width: 65%;
 }
 .contact-review{
     background: #fff;
