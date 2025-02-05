@@ -660,7 +660,7 @@ background-repeat: no-repeat;}
 /**Statistics section**/
 .tilt3d .statistics-img {transform-style: preserve-3d;    transform: perspective(1000px);}
 .tilt3d .statistics-img img{transform: translateZ(20px)}
-.statistics{    align-items: center;    display: flex;}
+.statistics{    align-items: center;    display: flex; justify-content: center;}
 .statistics p{  font-size: 20px;    margin: 10px 0 0 0; font-weight: 500;}
 .statistics span{
 font-size: 45px;
@@ -5042,6 +5042,44 @@ a.smllbtnn {
     max-width: 800px;
     margin: 0 auto;
   }
+
+  .service-block {
+    padding: 80px 0;
+}
+.main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    position: relative;
+}
+.service-item {
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.icon-box {
+    text-align: center;
+    padding: 20px;
+}
+.icon-box h4 {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+.icon-box p {
+    color: #666;
+    line-height: 1.6;
+}
+.text-primary {
+    color: #0D6EFD;
+}
 
 
 
