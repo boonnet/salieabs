@@ -5082,6 +5082,51 @@ a.smllbtnn {
 }
 
 
+.filters {
+    margin-bottom: 30px;
+  }
+  
+  .filter-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+  }
+  
+  .filter-item {
+    padding: 10px 20px;
+    background-color: #fff1eb;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+  }
+  
+  .filter-item.is-checked {
+    background-color: #ff69a5;
+    color: white;
+  }
+  
+  .filter-item:hover {
+    background-color: #ffb4d1;
+    transform: translateY(-2px);
+  }
+  
+  @media (max-width: 768px) {
+    .filter-menu {
+      gap: 10px;
+    }
+    
+    .filter-item {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+
+
 
 
 
