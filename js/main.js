@@ -147,7 +147,7 @@ File Description: Main JS file of the template*/
     //Owl-Carousel - case-study
     var owl = $('.project-screens');
     owl.owlCarousel({
-      items: 4,
+      items: 8,
       loop: true,
       autoplay: true,
       margin: 20,
@@ -442,3 +442,51 @@ File Description: Main JS file of the template*/
   
   //end of page
   })(jQuery);
+
+
+
+  let currentSlide = 0;
+  const totalSlides = document.querySelectorAll('.image-col:first-child .slide').length;
+  let slideInterval;
+  let imageModal;
+
+  function showSlide(index) {
+      const leftSlides = document.querySelectorAll('.image-col:first-child .slide');
+      const rightSlides = document.querySelectorAll('.image-col:last-child .slide');
+      
+      leftSlides.forEach(slide => slide.classList.remove('active'));
+      rightSlides.forEach(slide => slide.classList.remove('active'));
+      
+      leftSlides[index].classList.add('active');
+      rightSlides[index].classList.add('active');
+  }
+
+  function nextSlide() {
+      currentSlide = (currentSlide + 1) % totalSlides;
+      showSlide(currentSlide);
+  }
+
+  function startAutoSlide() {
+      stopAutoSlide();
+      slideInterval = setInterval(nextSlide, 3000);
+  }
+
+  function stopAutoSlide() {
+      if (slideInterval) {
+          clearInterval(slideInterval);
+      }
+  }
+
+  function openModal(imgSrc) {
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = imgSrc;
+      imageModal.show();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+      imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+      startAutoSlide();
+  });
+
+  document.querySelector('.slider-content').addEventListener('mouseenter', stopAutoSlide);
+  document.querySelector('.slider-content').addEventListener('mouseleave', startAutoSlide);
