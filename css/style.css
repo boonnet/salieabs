@@ -5140,6 +5140,7 @@ a.smllbtnn {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    position: relative;
 }
 .slide {
     display: none;
@@ -5161,6 +5162,34 @@ a.smllbtnn {
 .image-col {
     flex: 1;
 }
+/* Navigation arrows for slider - improved for mobile */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+    left: 0;
+    padding: 0 10px;
+}
+.slider-arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 /* Updated modal styles */
 .modal-dialog.modal-xl {
     max-width: 90vw;
@@ -5168,16 +5197,21 @@ a.smllbtnn {
 }
 .modal-content {
     background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
 }
 .modal-header {
     border-bottom: none;
     padding: 1rem;
     position: absolute;
     right: 0;
-    z-index: 1;
+    z-index: 3;
 }
 .modal-body {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
 }
 .btn-close {
     background-color: #fff;
@@ -5190,7 +5224,123 @@ a.smllbtnn {
     margin: auto;
     display: block;
 }
+/* Navigation arrows for modal - improved for mobile */
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+    left: 0;
+    padding: 0 15px;
+}
+.modal-arrow {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
+}
+.modal-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
+/* Adjustments for mobile view */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+    
+    .slider-nav {
+        top: 50%;
+        width: 100%;
+        padding: 0 5px;
+    }
+    
+    .slider-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .modal-nav {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    .modal-arrow {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+    
+    .modal-body {
+        height: 75vh;
+    }
+    
+    .modal-img {
+        max-height: 70vh;
+    }
+}
 
+.hero-main-rp {
+    position: relative;
+    overflow: hidden;
+    /* Remove the background-image property */
+}
 
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
 
+#myVideo {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures video covers entire container */
+    max-width: none; /* Prevents video from being constrained */
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed for proper text visibility */
+    z-index: -1;
+}
+
+.hero-content-container {
+    position: relative;
+    z-index: 1;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* Ensure content is properly positioned relative to the video */
+.hero-main-rp .row {
+    position: relative;
+    z-index: 1;
+}

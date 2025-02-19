@@ -446,9 +446,11 @@ File Description: Main JS file of the template*/
 
 
   let currentSlide = 0;
+  let currentModalImageIndex = 0;
   const totalSlides = document.querySelectorAll('.image-col:first-child .slide').length;
   let slideInterval;
   let imageModal;
+  let allImages = [];
 
   function showSlide(index) {
       const leftSlides = document.querySelectorAll('.image-col:first-child .slide');
@@ -459,11 +461,22 @@ File Description: Main JS file of the template*/
       
       leftSlides[index].classList.add('active');
       rightSlides[index].classList.add('active');
+      
+      currentSlide = index;
   }
 
   function nextSlide() {
       currentSlide = (currentSlide + 1) % totalSlides;
       showSlide(currentSlide);
+      stopAutoSlide(); // Stop auto-sliding when user interacts
+      setTimeout(startAutoSlide, 5000); // Restart after 5 seconds
+  }
+
+  function prevSlide() {
+      currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+      showSlide(currentSlide);
+      stopAutoSlide(); // Stop auto-sliding when user interacts
+      setTimeout(startAutoSlide, 5000); // Restart after 5 seconds
   }
 
   function startAutoSlide() {
@@ -477,16 +490,105 @@ File Description: Main JS file of the template*/
       }
   }
 
-  function openModal(imgSrc) {
+  function collectAllImages() {
+      allImages = Array.from(document.querySelectorAll('.slider-img'));
+  }
+
+  function openModal(imgElement) {
+      collectAllImages();
+      currentModalImageIndex = allImages.indexOf(imgElement);
       const modalImage = document.getElementById('modalImage');
-      modalImage.src = imgSrc;
+      modalImage.src = imgElement.src;
+      modalImage.alt = imgElement.alt;
       imageModal.show();
+      stopAutoSlide(); // Stop auto-sliding when modal is opened
+  }
+
+  function prevModalImage() {
+      currentModalImageIndex = (currentModalImageIndex - 1 + allImages.length) % allImages.length;
+      updateModalImage();
+  }
+
+  function nextModalImage() {
+      currentModalImageIndex = (currentModalImageIndex + 1) % allImages.length;
+      updateModalImage();
+  }
+
+  function updateModalImage() {
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = allImages[currentModalImageIndex].src;
+      modalImage.alt = allImages[currentModalImageIndex].alt;
   }
 
   document.addEventListener('DOMContentLoaded', () => {
       imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+      collectAllImages();
       startAutoSlide();
+      
+      // Keyboard support for modal navigation
+      document.addEventListener('keydown', (event) => {
+          if (document.getElementById('imageModal').classList.contains('show')) {
+              if (event.key === 'ArrowLeft') {
+                  prevModalImage();
+              } else if (event.key === 'ArrowRight') {
+                  nextModalImage();
+              } else if (event.key === 'Escape') {
+                  imageModal.hide();
+              }
+          }
+      });
+      
+      // Restart auto-sliding when modal is closed
+      document.getElementById('imageModal').addEventListener('hidden.bs.modal', () => {
+          setTimeout(startAutoSlide, 1000);
+      });
   });
 
   document.querySelector('.slider-content').addEventListener('mouseenter', stopAutoSlide);
   document.querySelector('.slider-content').addEventListener('mouseleave', startAutoSlide);
+  
+  // Touch event handling for mobile swipe
+  let touchStartX = 0;
+  let touchEndX = 0;
+  
+  document.querySelector('.slider-content').addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+  });
+  
+  document.querySelector('.slider-content').addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+  });
+  
+  document.getElementById('imageModal').addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+  });
+  
+  document.getElementById('imageModal').addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleModalSwipe();
+  });
+  
+  function handleSwipe() {
+      if (touchEndX < touchStartX - 50) {
+          // Swipe left
+          nextSlide();
+      }
+      if (touchEndX > touchStartX + 50) {
+          // Swipe right
+          prevSlide();
+      }
+  }
+  
+  function handleModalSwipe() {
+      if (document.getElementById('imageModal').classList.contains('show')) {
+          if (touchEndX < touchStartX - 50) {
+              // Swipe left
+              nextModalImage();
+          }
+          if (touchEndX > touchStartX + 50) {
+              // Swipe right
+              prevModalImage();
+          }
+      }
+  }

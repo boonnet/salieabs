@@ -467,22 +467,20 @@
 		<!--end sidebar -->
 		
 <!--Breadcrumb Area-->
-<section class="breadcrumb-area banner-5">
+<section class="breadcrumb-area banner-5" style="background-image: url('./images/dropwise-img/drop wise banner.png'); background-size: cover; background-position: center;">
 <div class="text-block">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 v-center">
 <div class="bread-inner">
 <div class="bread-menu">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="case-studies.html">Case Study</a></li>
-<li><a href="#">Case Studies </a></li>
-</ul>
+  <h1 class="wow fadeInUp" data-wow-delay=".2s">Drop Wise</h1>
+  <p class="mt20 wow fadeInUp" data-wow-delay=".4s">A holistic platform to meter, measure, bill and analyse water supply </p>
+  <a href="#" class="btn-main bg-btn2 lnk mt20 wow zoomInDown" data-wow-delay=".6s">Get Quote <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
 </div>
-<div class="bread-title">
+<!-- <div class="bread-title">
 <h2>Our Case Studies</h2>
-</div>
+</div> -->
 </div>
 </div>
 </div>
@@ -579,7 +577,7 @@
 <li>Billing & Revenue Control</li>
 </ul>
 </div>
-<div class="col-lg-6 col-sm-6">
+<div class="col-lg-6 col-sm-6 align-content-center">
 <div class="project-view m-mt30">
 <img src="./images/dropwise-img/DW1.png" alt="case study" class="img-fluid"/>
 </div>
@@ -655,26 +653,52 @@
           <!-- Left Column -->
           <div class="image-col">
               <div class="slide active">
-                  <img src="./images/dropwise-img/DW1.png" alt="Image 1" class="slider-img" onclick="openModal(this.src)">
+                  <img src="./images/dropwise-img/DW1.png" alt="Image 1" class="slider-img" onclick="openModal(this)">
               </div>
               <div class="slide">
-                  <img src="./images/dropwise-img/DW3.png" alt="Image 3" class="slider-img" onclick="openModal(this.src)">
+                  <img src="./images/dropwise-img/DW3.png" alt="Image 3" class="slider-img" onclick="openModal(this)">
               </div>
               <div class="slide">
-                  <img src="./images/dropwise-img/DW5.png" alt="Image 5" class="slider-img" onclick="openModal(this.src)">
+                  <img src="./images/dropwise-img/DW5.png" alt="Image 5" class="slider-img" onclick="openModal(this)">
               </div>
           </div>
           
           <!-- Right Column -->
           <div class="image-col">
               <div class="slide active">
-                  <img src="./images/dropwise-img/DW2.png" alt="Image 2" class="slider-img" onclick="openModal(this.src)">
+                  <img src="./images/dropwise-img/DW2.png" alt="Image 2" class="slider-img" onclick="openModal(this)">
               </div>
               <div class="slide">
-                  <img src="./images/dropwise-img/DW4.png" alt="Image 4" class="slider-img" onclick="openModal(this.src)">
+                  <img src="./images/dropwise-img/DW4.png" alt="Image 4" class="slider-img" onclick="openModal(this)">
               </div>
               <div class="slide">
-                  <img src="./images/dropwise-img/DW6.png" alt="Image 6" class="slider-img" onclick="openModal(this.src)">
+                  <img src="./images/dropwise-img/DW6.png" alt="Image 6" class="slider-img" onclick="openModal(this)">
+              </div>
+          </div>
+      </div>
+      
+      <!-- Navigation arrows for slider -->
+      <div class="slider-nav">
+          <button class="slider-arrow prev" onclick="prevSlide()">❮</button>
+          <button class="slider-arrow next" onclick="nextSlide()">❯</button>
+      </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <img id="modalImage" class="modal-img" src="" alt="Modal image">
+              
+              <!-- Navigation arrows for modal -->
+              <div class="modal-nav">
+                  <button class="modal-arrow prev" onclick="prevModalImage()">❮</button>
+                  <button class="modal-arrow next" onclick="nextModalImage()">❯</button>
               </div>
           </div>
       </div>
@@ -846,7 +870,7 @@
                 <div class="col-lg-6">
                     <div class="email-subs">
                         <h3>Get New Insights Weekly</h3>
-                        <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
+                        <p>Subscribe to our weekly newsletter to read exciting transformations AIoT can bring in various walks of industries.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 v-center">
@@ -866,7 +890,7 @@
                 <div class="col-lg-3 col-sm-6  ftr-brand-pp">
                  <a class="navbar-brand mt30 mb25 f-dark-logo" href="#"> <img src="./images/Salieabs Logo_V1_PNG.png" alt="Logo"/></a>
                  <a class="navbar-brand mt30 mb25 f-white-logo" href="#"> <img src="./images/Salieabs Logo_V1_PNG.png" alt="Logo" /></a>
-                 <p>News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Enter your email</p>
+                 <p>Subscribe to our weekly newsletter to read exciting transformations AIoT can bring in various walks of industries.</p>
                  <a href="#" class="btn-main bg-btn3 lnk mt20">Become Partner <i class="fas fa-chevron-right fa-icon"></i><span class="circle"></span></a>
             </div>
                 <div class="col-lg-3 col-sm-6">
