@@ -1217,12 +1217,12 @@ padding: 30px 0;
 -webkit-box-shadow:  0 10px 10px -10px rgba(0, 0, 0, 0.05);
 box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.05);}
 .breadcrumb-areav2:before{
-content: '';   position: absolute;   top: 0;   height: 100%;   width: 100%;   opacity: .85;     right: 0;    left: 0; z-index:0;
+content: '';   position: absolute;   top: 0;   height: 100%;   width: 100%;   opacity: .60;     right: 0;    left: 0; z-index:0;
 background: -moz-linear-gradient(-45deg, #ffdee9 0%, #c8fff4  100%);
 background: -webkit-linear-gradient(-45deg, #ffdee9 0%,#c8fff4  100%);
 background: linear-gradient(135deg, #ffdee9 0%,#c8fff4  100%);}
 .breadcrumb-area:before{
-content: '';   position: absolute;   top: 0;   height: 100%;   width: 100%;   opacity: .85;     right: 0;    left: 0; z-index:0;
+content: '';   position: absolute;   top: 0;   height: 100%;   width: 100%;   opacity: .60;     right: 0;    left: 0; z-index:0;
 background: -moz-linear-gradient(-45deg, #ffdee9 0%, #c8fff4  100%);
 background: -webkit-linear-gradient(-45deg, #ffdee9 0%,#c8fff4  100%);
 background: linear-gradient(135deg, #ffdee9 0%,#c8fff4  100%);}
@@ -5125,17 +5125,6 @@ a.smllbtnn {
       font-size: 14px;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
   .slider-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -5343,4 +5332,62 @@ a.smllbtnn {
 .hero-main-rp .row {
     position: relative;
     z-index: 1;
+}
+
+.client-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 2rem 0;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 30); /* Adjust based on item width and count */
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 15)); /* Half of slide-track width */
+    }
+}
+
+.brand-slide{
+    width: 250px;
+    padding: 15px;
+}
+
+.brand-logo {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-logo:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-slide p {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
 }
