@@ -488,7 +488,7 @@
 </section> -->
 <!--End Breadcrumb Area-->
 <!--Start Case Study About-->
-<section class="case-study pad-tb">
+<section class="case-study pad-tb st-mb mt-5">
 <div class="container">
 <div class="row">
 <div class="col-lg-6">
@@ -513,7 +513,7 @@
 </div>
 </section>
 <!--End Case Study About-->
-<section class="case-study pad-tb bg-gradient6 deep-dark">
+<section class="case-study pad-tb bg-gradient6 deep-dark st-mb">
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-lg-10">
@@ -543,7 +543,7 @@
 </ul>
 </div>
 <div class="col-lg-4 servie-key-points">
-	<h4 class="mt20 mb10">Benifits</h4>
+	<h4 class="mt20 mb10">Benefits</h4>
 	<ul class="key-points">
 		<li>8% reduction in non revenue water.</li>
 		<li>Increase in water revenue by 15.5%.</li>
@@ -580,51 +580,95 @@
 
 
 <!--Start Result-->
-<section class="case-study pad-tb deep-dark">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-lg-6">
-<div class="common-heading">
-<h2 class="mb30">See The Result</h2>
-</div>
-</div>
-</div>
-<div class="row in-stats card-stats">
-<div class="col-lg-3 col-sm-6 col-6 mt30">
-<div class="statistics">
-<div class="statnumb">
-<span class="counter">20</span><span>%</span>
-<p>ROI Increase</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-6 mt30">
-<div class="statistics">
-<div class="statnumb counter-number">
-<span class="counter">40</span><span>%</span>
-<p>Traffic Increase</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-6 mt30">
-<div class="statistics">
-<div class="statnumb counter-number">
-<span class="counter">30</span><span>%</span>
-<p>Order Increase</p>
-</div>
-</div>
-</div>
-<div class="col-lg-3 col-sm-6 col-6 mt30">
-<div class="statistics">
-<div class="statnumb counter-number">
-<span class="counter">60</span><span>%</span>
-<p>Order Increase</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+<div class="slider-container">
+	<div class="slider-content">
+		<div class="image-row">
+			<!-- Left Column -->
+			<div class="image-col">
+				<div class="slide active">
+					<img src="./images/case-study/Smart Water Metering & Billing/0.png" alt="Image 1" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/1.png" alt="Image 3" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/2.png" alt="Image 5" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/3.png" alt="Image 7" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/4.png" alt="Image 9" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/5.png" alt="Image 11" class="slider-img" onclick="openModal(this)">
+				</div>
+			</div>
+			
+			<!-- Right Column -->
+			<div class="image-col">
+				<div class="slide active">
+					<img src="./images/case-study/Smart Water Metering & Billing/6.png" alt="Image 2" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/7.png" alt="Image 4" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/8.png" alt="Image 6" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/9.png" alt="Image 8" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/10.png" alt="Image 10" class="slider-img" onclick="openModal(this)">
+				</div>
+				<div class="slide">
+					<img src="./images/case-study/Smart Water Metering & Billing/11.png" alt="Image 12" class="slider-img" onclick="openModal(this)">
+				</div>
+			</div>
+		</div>
+		
+		<!-- Navigation arrows for slider -->
+		<div class="slider-nav">
+			<button class="slider-arrow prev" onclick="prevSlide()">❮</button>
+			<button class="slider-arrow next" onclick="nextSlide()">❯</button>
+		</div>
+	</div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-xl modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<img id="modalImage" class="modal-img" src="" alt="Modal image">
+				
+				<!-- Navigation arrows for modal -->
+				<div class="modal-nav">
+					<button class="modal-arrow prev" onclick="prevModalImage()">❮</button>
+					<button class="modal-arrow next" onclick="nextModalImage()">❯</button>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-xl">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body text-center">
+				<img id="modalImage" src="" alt="Modal Image" class="modal-img">
+			</div>
+		</div>
+	</div>
+  </div>
 <!--End Result-->
 <!--Start reveiws-->
 

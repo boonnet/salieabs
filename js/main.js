@@ -1,6 +1,35 @@
 /* Theme: Niwax - Creative Web Design & Digital Marketing Agency HTML5 Template
 Author: Rajesh-Doot	
 File Description: Main JS file of the template*/
+document.addEventListener("DOMContentLoaded", function () {
+  let logoimg = document.querySelector('.change');
+  
+  if (!logoimg) {
+    console.error("Logo image not found!");
+    return; // Prevents errors if the element is missing
+  }
+
+  let defaultLogo = "./images/White logo.png";
+  let scrolledLogo = "./images/Salieabs Logo_V1_PNG.png"; 
+
+  // Check on page load (in case user reloads while scrolled down)
+  if (window.scrollY > 50) {
+    logoimg.src = scrolledLogo;
+  } else {
+    logoimg.src = defaultLogo;
+  }
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) { 
+      logoimg.src = scrolledLogo;
+    } else {
+      logoimg.src = defaultLogo;
+    }
+  });
+  // console.log(logoimg)
+});
+
+
 (function ($) {
     "use strict";
   
@@ -592,3 +621,6 @@ File Description: Main JS file of the template*/
           }
       }
   }
+
+
+  
