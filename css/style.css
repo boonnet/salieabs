@@ -404,7 +404,7 @@ font-weight: 700;}
 .flags-size {width:25px;}
 .awards-block-tt{margin-top: 40px;}
 .hero-content-sec{display: inline-flex; align-items: center;}
-.title-hero-oth p{font-size: 20px; color: #fff; margin: 0 0 0 25px; text-transform: uppercase; }
+.title-hero-oth p{font-size: 20px; color: #fff; margin: 0 0 0 25px;}
 .title-hero-oth p span{display: block; color: #fff000;}
 .hero-service-cards {margin-top: 100px;}
 .service-slide{border-radius: 30px; max-width: 280px; overflow: hidden;margin: 20px 0;  transform-style: preserve-3d; transform: perspective(1000px);}
