@@ -2346,7 +2346,7 @@ background-position: center;
 background-clip: text;
 color: transparent;}
 .hero-heading-sec2 > p {color: #fff000; font-size: 18px; margin: 40px 0; }
-.wide-sblock {display: inline-flex; text-align: left; padding: 30px 20px; }
+.wide-sblock {display: inline-flex; text-align: left; padding: 30px 20px; width: 93%; }
 .img100w {max-width: 100% !important; width: auto !important;}
 .funfct {
 box-shadow: 0 11px 20px rgb(123 149 162 / 15%);
@@ -5134,7 +5134,7 @@ a.smllbtnn {
     }
   }
   .slider-container {
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     position: relative;
@@ -5473,3 +5473,13 @@ a.smllbtnn {
 .item-info p {
     margin-bottom: 0;
 }
+
+.rpb-shop-items-flex {
+    display: flex;
+    width: 100%;
+}
+
+.rpb-shop-inf-rr {
+    margin-left: auto;
+}
+
