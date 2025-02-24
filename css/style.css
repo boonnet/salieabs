@@ -2878,7 +2878,7 @@ h4 {  font-size: 22px;  line-height: 32px;}
 h5 {  font-size: 20px;  line-height: 30px;}
 h6 {  font-size: 16px;  line-height: 26px;}
 p {   font-size: 17px;  line-height: 28px;}
-.pad-tb { padding-top: 100px; padding-bottom: 100px;}
+.pad-tb { padding-top: 50px; padding-bottom: 50px;}
 /* .st-mb{padding-bottom: 100px;} */
 .pr--100 { padding-right: 100px;}
 .pl--100 { padding-left: 100px;}
