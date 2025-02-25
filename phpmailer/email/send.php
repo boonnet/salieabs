@@ -16,8 +16,9 @@ if($isMailSentToAdmin != 'success' ){
 }
 
 $isUserConfirmationSent = $mail->sendEnquiryConfirmation();
-echo json_encode(['success' => true, 'message' =>  'We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day!']);
-return;
+
+echo "<script>alert('Email sent successfully!'); window.location.href = '/salieabs/get-quote.html';</script>";
+exit;
 
 class SendMail {
 
@@ -41,7 +42,7 @@ class SendMail {
         $reciverName = $this->name;
         $bodyContent = $this->getSenderConfirmationMailContent($this->data);
         $html = $bodyContent;
-        $subject = 'Seprate Web - No Reply';
+        $subject = 'Salieabs - No Reply';
         return $mail->sendMail($reciverName, $sendTo, $subject, $html);
     }
 
@@ -51,7 +52,7 @@ class SendMail {
     public function sendEnquiryToAdmin()
     {
         $mail = new Mailer();
-        $sendTo = 'vinod.eptins@gmail.com';
+        $sendTo = 'selvaganesh.deecodes@gmail.com';
         $reciverName = $this->name;
         $bodyContent = $this->getMailContentForAdmin($this->data);
         $html = $bodyContent;
@@ -100,7 +101,6 @@ class SendMail {
           <body>
             <div class="sw-email-body">
               <div class="emailheader">
-                <div class="logo-header"><img src="https://separateweb.com/demo-niwax/images/logo.png" alt="logo"></div>
                 <p>We appreciate you contacting us. One of our colleagues will get back in touch with you soon! Have a great day!</p>
               </div>
               <div class="emailbodystart">
@@ -111,7 +111,7 @@ class SendMail {
                 </div>
                 <div class="fieldset">
                   <div class="contactuser">Mobile Number</div>
-                  <div class="contactuserdata">'.$data['mobile_number'].'</div>
+                  <div class="contactuserdata">'.$data['mobile'].'</div>
                   <div class="clear"></div>
                 </div>
                 <div class="fieldset">
@@ -120,38 +120,21 @@ class SendMail {
                   <div class="clear"></div>
                 </div>
                 <div class="fieldset">
-                  <div class="contactuser">Interested In</div>
-                  <div class="contactuserdata">'.$data['interested_in'].'</div>
-                  <div class="clear"></div>
-                </div>
-                <div class="fieldset">
-                  <div class="contactuser">Customer Location</div>
-                  <div class="contactuserdata">'.$data['your_location'].'</div>
-                  <div class="clear"></div>
-                </div>
-                <div class="fieldset">
-                  <div class="contactuser">Skype/Whatsapp</div>
-                  <div class="contactuserdata">'.$data['skype_whatsapp_no'].'</div>
+                  <div class="contactuser">Requirement</div>
+                  <div class="contactuserdata">'.$data['Dtype'].'</div>
                   <div class="clear"></div>
                 </div>
                 <div class="fieldset messagebody">
                   <div class="contactuser">Customer Message</div>
-                  <div class="contactuserdata usermessage">'.$data['description'].'</div>
+                  <div class="contactuserdata usermessage">'.$data['message'].'</div>
                   <div class="clear"></div>
                 </div>
                 <div class="footer">
-                  <h3 class="companytt">Niwax Contact Form</h3>
-                  <div class="ft-service">
-                  <ul>
-                  <li><a href="https://www.google.com/">Websites</a></li>
-                  <li><a href="https://www.google.com/">Mobile App</a></li>
-                  <li><a href="https://www.google.com/">Graphic Design</a></li>
-                  <li><a href="https://www.google.com/">Digital Marketing</a></li>
-                  </div>
-                  <p>Website: www.yourwebsite.com</p>
-                  <p>Email: info@yourwebsite.com</p>
-                  <p>Call: +91-12344567890</p>
-                  <p>Jaipur, Rajasthan, India</p>
+                  <h3 class="companytt">Salieabs Contact Form</h3>
+                  <p>Website: https://salieabs.com</p>
+                  <p>Email: info@salieabs.com</p>
+                  <p>Call: +91 9791848808</p>
+                  <p>G6, ELCOT Campus, SALEM IT Park SEZ, Jagirammapalayam, Salem – 636302</p>
                 </div>
               </div>
             </div>
@@ -202,7 +185,6 @@ class SendMail {
           <body>
             <div class="sw-email-body">
               <div class="emailheader">
-                <div class="logo-header"><img src="https://separateweb.com/demo-niwax/images/logo.png" alt="logo"></div>
                 <p>You got an email from your website!</p>
               </div>
               <div class="emailbodystart">
@@ -213,7 +195,7 @@ class SendMail {
                 </div>
                 <div class="fieldset">
                   <div class="contactuser">Mobile Number</div>
-                  <div class="contactuserdata">'.$data['mobile_number'].'</div>
+                  <div class="contactuserdata">'.$data['mobile'].'</div>
                   <div class="clear"></div>
                 </div>
                 <div class="fieldset">
@@ -222,38 +204,21 @@ class SendMail {
                   <div class="clear"></div>
                 </div>
                 <div class="fieldset">
-                  <div class="contactuser">Interested In</div>
-                  <div class="contactuserdata">'.$data['interested_in'].'</div>
-                  <div class="clear"></div>
-                </div>
-                <div class="fieldset">
-                  <div class="contactuser">Customer Location</div>
-                  <div class="contactuserdata">'.$data['your_location'].'</div>
-                  <div class="clear"></div>
-                </div>
-                <div class="fieldset">
-                  <div class="contactuser">Whatsapp No</div>
-                  <div class="contactuserdata">'.$data['skype_whatsapp_no'].'</div>
+                  <div class="contactuser">Requirement</div>
+                  <div class="contactuserdata">'.$data['Dtype'].'</div>
                   <div class="clear"></div>
                 </div>
                 <div class="fieldset messagebody">
                   <div class="contactuser">Customer Message</div>
-                  <div class="contactuserdata usermessage">'.$data['description'].'</div>
+                  <div class="contactuserdata usermessage">'.$data['message'].'</div>
                   <div class="clear"></div>
                 </div>
                 <div class="footer">
-                  <h3 class="companytt">Niwax Contact Form</h3>
-                  <div class="ft-service">
-                  <ul>
-                  <li><a href="https://www.google.com/">Websites</a></li>
-                  <li><a href="https://www.google.com/">Mobile App</a></li>
-                  <li><a href="https://www.google.com/">Graphic Design</a></li>
-                  <li><a href="https://www.google.com/">Digital Marketing</a></li>
-                  </div>
-                  <p>Website: www.yourwebsite.com</p>
-                  <p>Email: info@yourwebsite.com</p>
-                  <p>Call: +91-12344567890</p>
-                  <p>Jaipur, Rajasthan, India</p>
+                  <h3 class="companytt">Salieabs Contact Form</h3>
+                  <p>Website: https://salieabs.com</p>
+                  <p>Email: info@salieabs.com</p>
+                  <p>Call: +91 9791848808</p>
+                  <p>G6, ELCOT Campus, SALEM IT Park SEZ, Jagirammapalayam, Salem – 636302</p>
                 </div>
               </div>
             </div>
@@ -267,35 +232,38 @@ class SendMail {
         $isValid = 1;
         $errorMsg = '';
         $this->data['fullname'] = $this->testInput($this->data['fullname']);
-        $this->data['mobile_number'] = $this->testInput($this->data['mobile_number']);
+        $this->data['mobile'] = $this->testInput($this->data['mobile']);
         $this->data['email'] = $this->testInput($this->data['email']);
-        $this->data['interested_in'] = $this->testInput($this->data['interested_in']);
-        $this->data['your_location'] = $this->testInput($this->data['your_location']);
-        $this->data['skype_whatsapp_no'] = $this->testInput($this->data['skype_whatsapp_no']);
-        $this->data['description'] = $this->testInput($this->data['description']);
-        $this->data['agree'] = $this->testInput($this->data['agree']);
+        $this->data['Dtype'] = $this->testInput($this->data['Dtype']);
+        // $this->data['your_location'] = $this->testInput($this->data['your_location']);
+        // $this->data['skype_whatsapp_no'] = $this->testInput($this->data['skype_whatsapp_no']);
+        $this->data['message'] = $this->testInput($this->data['message']);
+        $this->data['example1'] = $this->testInput($this->data['example1']);
         if(empty($this->data['fullname'])){
             $errorMsg = "Name is required.";
             $isValid = 0;
-        } elseif(empty($this->data['mobile_number'])){
+        } elseif(empty($this->data['mobile'])){
             $errorMsg = "Mobile Number is required.";
             $isValid = 0;
         } elseif(empty($this->data['email'])){
             $errorMsg = "Email is required.";
             $isValid = 0;
-        } elseif(empty($this->data['interested_in'])){
+        } elseif(empty($this->data['Dtype'])){
             $errorMsg = "Please select your intrest.";
             $isValid = 0;
-        } elseif(empty($this->data['your_location'])){
-            $errorMsg = "Please provide your location.";
+        } 
+        // elseif(empty($this->data['your_location'])){
+        //     $errorMsg = "Please provide your location.";
+        //     $isValid = 0;
+        // } 
+        // elseif(empty($this->data['skype_whatsapp_no'])){
+        //     $errorMsg = "Please provide Skype/WhatsApp Number.";
+        //     $isValid = 0;
+        // } 
+        elseif(empty($this->data['message'])){
+            $errorMsg = "Please brief about your message.";
             $isValid = 0;
-        } elseif(empty($this->data['skype_whatsapp_no'])){
-            $errorMsg = "Please provide Skype/WhatsApp Number.";
-            $isValid = 0;
-        } elseif(empty($this->data['description'])){
-            $errorMsg = "Please brief about your project.";
-            $isValid = 0;
-        } elseif(empty($this->data['agree'])){
+        } elseif(empty($this->data['example1'])){
             $errorMsg = "Please accept terms and conditions.";
             $isValid = 0;
         }
