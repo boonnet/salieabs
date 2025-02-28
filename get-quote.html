@@ -387,7 +387,7 @@
 		  </div>
 		  <div class="form-block sidebarform">
 			<h4>Request A Quote</h4>
-			<form id="contactForm" data-bs-toggle="validator" class="shake mt20">
+			<form action="phpmailer/email/send.php" method="post" data-bs-toggle="validator" class="shake mt20">
 			  <div class="row">
 				<div class="form-group col-sm-12">
 				  <input type="text"  id="name" placeholder="Enter name" required data-error="Please fill Out">
@@ -543,20 +543,20 @@
 							<p class="mb60 mt10">We will catch you as early as we receive the message</p>
 						</div>
 						<div class="form-block">
-							<form id="contactForm" data-bs-toggle="validator" class="shake">
+							<form id="contactForm" action="phpmailer/email/send.php" method="post" data-bs-toggle="validator" class="shake">
 								<div class="row">
 									<div class="form-group col-sm-6">
-										<input type="text"  id="name" placeholder="Enter name" required data-error="Please fill Out">
+										<input type="text" name="fullname"  id="name" placeholder="Enter name" required data-error="Please fill Out">
 										<div class="help-block with-errors"></div>
 									</div>
 									<div class="form-group col-sm-6">
-										<input type="email"  id="email" placeholder="Enter email" required>
+										<input type="email" name="email"  id="email" placeholder="Enter email" required>
 										<div class="help-block with-errors"></div>
 									</div>
 								</div>
 								<div class="row">
 									<div class="form-group col-sm-6">
-										<input type="text" id="mobile" placeholder="Enter mobile" required data-error="Please fill Out">
+										<input type="text" name="mobile" id="mobile" placeholder="Enter mobile" required data-error="Please fill Out">
 										<div class="help-block with-errors"></div>
 									</div>
 									<div class="form-group col-sm-6">
@@ -571,14 +571,14 @@
 									</div>
 								</div>
 								<div class="form-group">
-									<textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+									<textarea id="message" rows="5" name="message" placeholder="Enter your message" required></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 								<div class="custom-control custom-checkbox">
 									<input type="checkbox" class="custom-control-input" id="customCheck" name="example1" checked="checked">
 									<label class="custom-control-label" for="customCheck">I agree to the <a href="javascript:void(0)">Terms &amp; Conditions</a> of Business Name.</label>
 								</div>
-								<button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <span class="circle"></span></button>
+								<button type="submit" id="form-submit" class="btn lnk btn-main bg-btn">Submit <span class="circle"></span>Submit</button>
 								<div id="msgSubmit" class="h3 text-center hidden"></div>
 								<div class="clearfix"></div>
 								<p class="trm"><i class="fas fa-lock"></i>We hate spam, and we respect your privacy.</p>
